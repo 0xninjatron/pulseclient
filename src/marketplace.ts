@@ -1,7 +1,7 @@
 import { AbiItem } from "web3-utils";
 import PMarketplaceABI from "./abi/PMarketplace.json";
 import { marketplaceAddress } from "./constant";
-import { BigNumber } from "@ethersproject/bignumber";
+import { ethers } from "ethers";
 import { web3 } from "./web3init";
 
 // Declare the type for the ABI
@@ -13,7 +13,7 @@ const marketplace = new web3.eth.Contract(
 
 export const listNFT = async (
   tokenId: number,
-  salePrice: BigNumber
+  salePrice: ethers.BigNumber
 ): Promise<string> => {
   try {
     const accounts = await web3.eth.getAccounts();
@@ -34,14 +34,14 @@ export const listNFT = async (
   }
 };
 
-export const getNFTListPrice = async (tokenId: number): Promise<BigNumber> => {
+export const getNFTListPrice = async (tokenId: number): Promise<ethers.BigNumber> => {
   return await marketplace.methods.tokenPrices(tokenId).call();
 };
 
 export const buyNFT = async (
   tokenId: number,
-  value: BigNumber,
-  autoSalePrice: BigNumber,
+  value: ethers.BigNumber,
+  autoSalePrice: ethers.BigNumber,
 ): Promise<string> => {
   try {
     const accounts = await web3.eth.getAccounts();

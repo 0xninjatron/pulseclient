@@ -2,7 +2,7 @@ import { AbiItem } from "web3-utils";
 import PNFTABI from "./abi/PNFT.json";
 import { web3 } from "./web3init";
 import { nftContractAddress } from "./constant";
-import { BigNumber } from "@ethersproject/bignumber";
+import { ethers } from "ethers";
 
 // Declare the type for the ABI
 const PNFTAbi: AbiItem[] = PNFTABI as AbiItem[];
@@ -21,7 +21,7 @@ export async function fetchTokenURI(tokenId: number) {
   return data;
 }
 
-export async function getRoyaltyInfo(tokenId: number, salePrice: BigNumber) {
+export async function getRoyaltyInfo(tokenId: number, salePrice: ethers.BigNumber) {
   console.log("salePrice: ", salePrice);
   const result = await nftContract.methods
     .royaltyInfo(tokenId, salePrice)
