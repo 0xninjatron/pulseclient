@@ -1,0 +1,123 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: large;
+
+  color-scheme: light dark;
+  /* color: rgba(255, 255, 255, 0.87); */
+  color: rgba(0, 0, 0, 1);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --glow-green-color: #00ff00;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: white;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+
+button {
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1em;
+  font-weight: 500;
+  margin: 0.25em 0.25em;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 0.625em;
+  line-height: 0.4; /* Adjust line-height to control the vertical spacing within the button */
+  padding: 0.625em 0.625em; /* Adjust padding to control the size of the button */
+}
+
+button:hover {
+  border: 2px solid black;
+  box-shadow: 0px 0px 15px 5px var(--glow-green-color); 
+}
+
+.card {
+  padding: 2em;
+}
+
+#app {
+  min-width: 95%;
+  margin: 0 auto;
+  /* padding: 2rem; */
+  text-align: center;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+/* For the spinner from https://cssspinners.github.io/ */
+.spinner {
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+  position: relative;
+}
+.spinner::after,
+.spinner::before {
+  content: '';  
+  box-sizing: border-box;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid #FFF;
+  position: absolute;
+  left: 0;
+  top: 0;
+  animation: animspinner 2s linear infinite;
+}
+.spinner::after {
+  animation-delay: 1s;
+}
+
+@keyframes animspinner {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
