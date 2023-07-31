@@ -1,7 +1,7 @@
 <template>
   <div class="wallet-container">
     <button @click="connectWallet">
-      <div v-if="!isWalletConnected">Connet Wallet</div>
+      <div v-if="!isWalletConnected">Connect Wallet</div>
       <div v-else>
         <p>{{ userAddress }}</p>
       </div>
