@@ -151,7 +151,7 @@ export default {
     const PNFTs = ref<PNFT[]>([]);
 
     onMounted(async () => {
-      PNFTs.value = await fetchNFT([0, 1]);
+      PNFTs.value = await fetchNFT([0]);
     });
 
     const refresh = async () => {
