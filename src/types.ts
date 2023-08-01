@@ -1,4 +1,4 @@
-import { ethers } from "ethers";
+import { BigNumber } from "@ethersproject/bignumber";
 
 export type PNFT = {
   contractAddress: string;
@@ -8,7 +8,7 @@ export type PNFT = {
   imageURLList: string[];
   isOwner: boolean;  
   sellerAddress: string | null;
-  saleAmount: ethers.BigNumber | null;
+  saleAmount: BigNumber | null;
 };
 
 
