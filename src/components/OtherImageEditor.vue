@@ -16,7 +16,7 @@
         >
           <img
             v-if="element"
-            :src="replaceIpfsPrefix(element)"
+            :src="compressImage(element)"
             :alt="`${nft.name} Image ${index}`"
             class="shadow-effect image-contain img-hover"
           />
@@ -46,7 +46,7 @@
 import { defineComponent, PropType, reactive } from "vue";
 import { PNFT } from "../types";
 import { setOtherImageUrls } from "../nftContract";
-import { replaceIpfsPrefix } from "../util";
+import { compressImage } from "../util";
 import Draggable from "vuedraggable";
 import Dialog from "./Dialog.vue";
 import { chainExplorerTx } from "../constant";
@@ -83,7 +83,7 @@ export default defineComponent({
     return {
       props,
       handleSaveClick,
-      replaceIpfsPrefix,
+      compressImage,
       dialogStatePendingTxn,
       chainExplorerTx,
     };

@@ -1,4 +1,5 @@
 import { ethers } from "ethers";
+import { CLOUDINARY_CLOUDNAME } from "./constant";
 
 export function shortenAddress(address: string, digits = 4) {
   if (!address) return "";
@@ -26,4 +27,9 @@ export const replaceIpfsPrefix = (str: string): string => {
     return `https://ipfs.io/ipfs/${str.replace("ipfs://", "")}`;
   }
   return str;
+};
+
+// Compress images via cloudinary
+export const compressImage = (str: string): string => {
+  return "https://res.cloudinary.com/" + CLOUDINARY_CLOUDNAME + "/image/fetch/f_auto/" + replaceIpfsPrefix(str);
 };

@@ -26,4 +26,6 @@ const WORKER_SERVICE_URL = "https://pulse-worker-ipfs.pulseworkers.workers.dev/"
 const autoSaleFactor = 5;
 const MAX_SECONDARY_IMAGES = 10;
 
-export { MAX_SECONDARY_IMAGES, WORKER_SERVICE_URL, autoSaleFactor, chainExplorer,chainExplorerTx, chainExplorerAddress,chainId, nftContractAddress, marketplaceAddress};
+const CLOUDINARY_CLOUDNAME = "deibsi4eu";
+
+export { CLOUDINARY_CLOUDNAME, MAX_SECONDARY_IMAGES, WORKER_SERVICE_URL, autoSaleFactor, chainExplorer,chainExplorerTx, chainExplorerAddress,chainId, nftContractAddress, marketplaceAddress};

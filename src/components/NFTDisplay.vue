@@ -10,7 +10,7 @@
 
           <img
             v-if="nft.imageURL"
-            :src="replaceIpfsPrefix(nft.imageURL)"
+            :src="compressImage(nft.imageURL)"
             :alt="nft.name"
             :class="{
               'shadow-effect': true,
@@ -42,7 +42,7 @@
             >
               <img
                 v-if="imageUrl"
-                :src="replaceIpfsPrefix(imageUrl)"
+                :src="compressImage(imageUrl)"
                 :alt="`${nft.name} Image ${index}`"
                 class="shadow-effect image-contain img-hover"
                 @click="handleImageClick(nft, imageUrl)"
@@ -83,7 +83,7 @@ import OrderMgr from "./OrderMgr.vue";
 import { ethers } from "ethers";
 import { getNFTListPrice } from "../marketplace";
 import { web3 } from "../web3init";
-import { replaceIpfsPrefix } from "../util";
+import { compressImage } from "../util";
 import { fetchTokenURI, ownerOf, nftContractAddress } from "../nftContract";
 import OtherImageEditor from "./OtherImageEditor.vue";
 
@@ -185,7 +185,7 @@ export default {
       showTooltip,
       ethers,
       selectedImageUrl,
-      replaceIpfsPrefix,
+      compressImage,
       refresh,
       randomImage,
       handleClose,

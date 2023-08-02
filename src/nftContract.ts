@@ -46,7 +46,6 @@ export async function getName(): Promise<string> {
 export const checkImageField = (data: any, imageKey: string): string | null => {
   if (data[imageKey] && typeof data[imageKey] === "string") {
     return data[imageKey];
-    // let imagePath = replaceIpfsPrefix(data[imageKey]);
   }
   return null;
 };

@@ -45,7 +45,7 @@
       <h2 v-if="selectedImageUrl">Use selected image:</h2>
       <img
         v-if="selectedImageUrl"
-        :src="replaceIpfsPrefix(selectedImageUrl)"
+        :src="compressImage(selectedImageUrl)"
         alt="Selected Image"
         class="thumbnail"
         :class="{ hoverhighlight: isHighlighted }"
@@ -81,7 +81,7 @@ import { PNFT } from "../types";
 import Dialog from "./Dialog.vue";
 import { setImageUrlHist } from "../nftContract";
 import { WORKER_SERVICE_URL, chainExplorerTx } from "../constant";
-import {  replaceIpfsPrefix } from "../util";
+import {  compressImage } from "../util";
 import { DialogState, handleTransaction } from "../dialog";
 
 
@@ -194,7 +194,7 @@ export default defineComponent({
       submit,
       placeholderText,
       uploadedFileContents,
-      replaceIpfsPrefix,
+      compressImage,
       isHighlighted,
       handleThumbnailImageClick,
       setImageModal,
