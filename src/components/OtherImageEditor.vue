@@ -97,7 +97,7 @@ export default defineComponent({
 }
 
 .hoverhighlight {
-  box-shadow: 0px 0px 15px 5px var(--glow-green-color);
+  box-shadow: 0px 0px 5px 5px var(--logo-color);
 }
 </style>
 
@@ -130,7 +130,7 @@ export default defineComponent({
 }
 
 .img-hover:hover {
-  box-shadow: 0px 0px 15px 5px var(--glow-green-color);  /* Adjust color and size to your liking */
+  box-shadow: 0px 0px 5px 5px var(--logo-color);  /* Adjust color and size to your liking */
 }
 
 .image-grid {
