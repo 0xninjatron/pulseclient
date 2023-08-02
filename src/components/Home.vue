@@ -98,7 +98,7 @@ export default defineComponent({
         'https://ipfs.io/ipfs/QmSjaN1pyPZ8foMexyTCAXRC4YUTHb2D7yYMWXXnM2kwmF/art-splash.webp',
         'https://ipfs.io/ipfs/QmSjaN1pyPZ8foMexyTCAXRC4YUTHb2D7yYMWXXnM2kwmF/ball%20and%20balloon.webp',
         'https://ipfs.io/ipfs/QmSjaN1pyPZ8foMexyTCAXRC4YUTHb2D7yYMWXXnM2kwmF/small%20man%20large%20gallery.webp',
-        'https://ipfs.io/ipfs/QmSjaN1pyPZ8foMexyTCAXRC4YUTHb2D7yYMWXXnM2kwmF/woman-varying-art.webp',              
+        'https://ipfs.io/ipfs/QmSjaN1pyPZ8foMexyTCAXRC4YUTHb2D7yYMWXXnM2kwmF/small%20woman%20large%20gallery.webp',              
       ]
     }
   },
