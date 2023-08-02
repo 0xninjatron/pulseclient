@@ -165,8 +165,8 @@ export default {
 
     // Image array
     const images = ref([
-      "https://ipfs.io/ipfs/QmaoMomXnUL7bsThLwoCZ4UkJETqmMJEUfGvSgaHz1pHTZ", //chaos crowd
-      "https://ipfs.io/ipfs/QmdKx4h3jPjyKrYFbm5oLdKbYETtEUoDuC98ddDrTDERby", //fire crowd
+      "https://ipfs.io/ipfs/QmPRvscKRDXEpG5rFceJWukuKfDLNKFDbMxvjazfJVmSje/chaos.webp",
+      "https://ipfs.io/ipfs/QmPRvscKRDXEpG5rFceJWukuKfDLNKFDbMxvjazfJVmSje/fire-crowd.webp",
       // add more image paths as needed...
     ]);
 
