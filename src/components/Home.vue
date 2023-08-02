@@ -27,7 +27,7 @@
         </div>
         <div className="image-content">
           <img className="image-inset-content"
-            src="https://ipfs.io/ipfs/QmNRcMuHexbnaTkgVk5ZZCHNuPELxGJJWunrZ1RWDpKXcj"
+            src="https://ipfs.io/ipfs/QmSjaN1pyPZ8foMexyTCAXRC4YUTHb2D7yYMWXXnM2kwmF/woman-varying-art.webp"
           />
         </div>
       </div>
@@ -43,7 +43,7 @@
         </div>
         <div className="image-content">
           <img className="image-inset-content"
-            src="https://ipfs.io/ipfs/QmchokpXqiPQFsjHbrUStr9ywNotKw1EaMXpJL3Yfh2x66"
+            src="https://ipfs.io/ipfs/QmSjaN1pyPZ8foMexyTCAXRC4YUTHb2D7yYMWXXnM2kwmF/future-tree.webp"
           />
         </div>
       </div>
@@ -61,7 +61,7 @@
         </div>
         <div className="image-content">
           <img className="image-inset-content"
-            src="https://ipfs.io/ipfs/QmPxXNKuc1obqm8vKgPjCXntBK24VWDwPZssaFhjJVsu68"
+            src="https://ipfs.io/ipfs/QmSjaN1pyPZ8foMexyTCAXRC4YUTHb2D7yYMWXXnM2kwmF/people-stairs.webp"
           />
         </div>
       </div>
@@ -78,7 +78,7 @@
         </div>
         <div className="image-content">
           <img className="image-inset-content"       
-            src="https://ipfs.io/ipfs/QmQEhz6mVEVyHGyZapgNKrWy6ajKPnyA4UHYPMMKgVGqTP"
+            src="https://ipfs.io/ipfs/QmSjaN1pyPZ8foMexyTCAXRC4YUTHb2D7yYMWXXnM2kwmF/astronaut.webp"
           />
         </div>
       </div>
@@ -94,11 +94,11 @@ export default defineComponent({
   data() {
     return {
       imageUrls: [
-        'https://ipfs.io/ipfs/QmbCwdSzW97RoCJWwb1PZX2zjiKpQq8aqAjGXpkw12q7Zq',
-        'https://ipfs.io/ipfs/QmaKsKMkzh2kss2rnJDHot32XExcLL9k9XN4fqcgKMDEHR',
-        'https://ipfs.io/ipfs/QmXeY96ntYTDEkE1xf7CtS5ysniGuCi1icznGZ9YBiUVTa',
-        'https://ipfs.io/ipfs/QmSKAubFMTw6E7W5fZbGmYMHpRxsySqHj66kwYaRQ2YHZP',
-        'https://ipfs.io/ipfs/QmYntNLWhNdvyHymH9nfS9zXYnN2nhmYYpmVcnpvdyY1vs',              
+        'https://ipfs.io/ipfs/QmSjaN1pyPZ8foMexyTCAXRC4YUTHb2D7yYMWXXnM2kwmF/art-gallery-person-stairs.webp',
+        'https://ipfs.io/ipfs/QmSjaN1pyPZ8foMexyTCAXRC4YUTHb2D7yYMWXXnM2kwmF/art-splash.webp',
+        'https://ipfs.io/ipfs/QmSjaN1pyPZ8foMexyTCAXRC4YUTHb2D7yYMWXXnM2kwmF/ball%20and%20balloon.webp',
+        'https://ipfs.io/ipfs/QmSjaN1pyPZ8foMexyTCAXRC4YUTHb2D7yYMWXXnM2kwmF/small%20man%20large%20gallery.webp',
+        'https://ipfs.io/ipfs/QmSjaN1pyPZ8foMexyTCAXRC4YUTHb2D7yYMWXXnM2kwmF/woman-varying-art.webp',              
       ]
     }
   },
